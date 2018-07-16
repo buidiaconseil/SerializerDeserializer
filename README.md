@@ -1,5 +1,16 @@
 # SerializerDeserializer
 
+A simple tool developed to serializeand deserialize type to a file.
+Support long, int, double and string. Association of different type permit to create a more complex object.
+
+
+# can be serialized on istream/ostream and files
+
+        void saveFile (std::string);
+	void readFile (std::string);
+	friend std::istream& operator>> (std::istream& out, Serializer& per);
+	friend std::ostream& operator<< (std::ostream& out, Serializer& per);
+
 ## Sample Code
 
 ### test int 
